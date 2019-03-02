@@ -1,0 +1,479 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* debut Header */
+
+header {
+    display: flex;
+    border: 1px solid grey;
+    position: relative;
+}
+
+.navbar-top {
+    display: flex;
+}
+
+.navbar-top li {
+    list-style-type: none;
+}
+
+.navbar-top a {
+    margin: 20px;
+    color: rgb(54, 57, 69);
+    font-size: 16px;
+    font-family: Walsheim;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sign-log {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    border-left: 1px solid grey;
+}
+
+.wistia-logo {
+    border-right: 1px solid grey;
+    ;
+}
+
+.navbar {
+
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.navbar-product {
+    position: absolute;
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    left: 0;
+    border-top: 1px solid grey;
+    background-color: #EFEFEF;
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.navbar-learn,
+.navbar-about,
+.navbar-support,
+.navbar-pricing {
+    display: none;
+    width: 100%;
+}
+
+.features,
+.integrations,
+.soapbox {
+    display: none;
+}
+
+.product:hover .navbar-product,
+.learn:hover .navbar-learn,
+.about:hover .navbar-about,
+.support:hover .navbar-support,
+.pricing:hover .navbar-pricing {
+    position: absolute;
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    left: 0;
+    border-top: 1px solid grey;
+    background-color: #EFEFEF;
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.navbar-features:hover .features,
+.navbar-integrations:hover .integrations,
+.navbar-soapbox:hover .soapbox {
+    display: flex;
+    position: absolute;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    width: 70%;
+    height: 175px;
+    left: 0px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: white;
+    z-index: 144;
+}
+
+.features:hover,
+.integrations a:hover,
+.soapbox a:hover {
+    text-decoration: underline;
+}
+
+.sign-log a {
+    color: rgb(54, 57, 69);
+    font-size: 16px;
+    font-family: Walsheim;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup,
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid grey;
+    cursor: pointer;
+}
+
+.login:hover {
+    background-color: #EFEFEF;
+}
+
+.signup {
+    background-color: #EFEFEF;
+    color: #3EA9F5;
+}
+
+.signup a {
+    color: #3EA9F5;
+}
+
+/* fin Header */
+
+/* debut Main */
+
+/* debut section Video-software  */
+
+.Video-software {
+    display: flex;
+    justify-content: space-around;
+    background-color: #CA95A4;
+    position: relative;
+}
+
+video {
+    width: 650px;
+    height: 572px;
+}
+
+.intro-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-video h1 {
+    color: #363945;
+    font-family: Walsheim;
+    font-size: 45px;
+}
+
+h1 span {
+    color: white;
+}
+
+.intro-video input {
+    background-color: white;
+    color: #363945;
+    font-weight: 500;
+    font-size: 25px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-family: Walsheim;
+    width: 210px;
+    height: 68px;
+    cursor: pointer;
+}
+
+.intro-video input:hover {
+    box-shadow: 0 5px 0 0 rgba(255, 255, 255, 0.55);
+}
+
+/* fin section Video-software  */
+
+/* debut section videos-manipulations  */
+
+.videos-manipulations {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+}
+
+.hosting {
+    background-color: rgb(254, 210, 74);
+}
+
+.create {
+    background-color: rgb(81, 194, 159);
+}
+
+.grow {
+    background-color: rgb(62, 169, 245);
+}
+
+.videos-manipulations h2 {
+    color: white;
+    font-size: 24px;
+    font-family: Walsheim;
+}
+
+.videos-manipulations p,
+.videos-manipulations a {
+    font-size: 20px;
+    color: #2A2D35;
+    font-family: Walsheim;
+    font-weight: 400;
+}
+
+.botton-videos-manipulations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.55);
+    border-radius: 5px;
+    font-size: 18px;
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.botton-videos-manipulations:hover {
+    background-color: white;
+    box-shadow: 0 5px 0 0 rgba(255, 255, 255, 0.55)
+}
+
+.fa-chart-bar {
+    color: rgb(62, 169, 245);
+}
+
+.fa-laptop {
+    color: #CA95A4;
+}
+
+.fa-book {
+    color: rgb(254, 210, 74);
+}
+
+.botton-videos-manipulations:hover+div i {
+    color: white;
+}
+
+.hosting,
+.create,
+.grow {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    padding: 60px;
+}
+
+/* fin section videos-manipulations  */
+
+/* debut  section businesses-grow  */
+
+.businesses-grow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px;
+    height: 177px;
+}
+
+.casper {
+    width: 170px;
+    height: 69px
+}
+
+.businesses-grow h3 {
+    color: #9CA8B7;
+    font-size: 17px;
+    font-family: Walsheim;
+}
+
+/* fin section businesses-grow  */
+
+/* debut section wistia-links  */
+
+.image-links {
+    width: 340px;
+    height: 243px;
+}
+
+.wistia-links h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2A2D35;
+    font-family: Walsheim;
+}
+
+.wistia-links p {
+    font-size: 18px;
+    color: #2A2D35;
+    font-family: Walsheim;
+    font-weight: 400;
+}
+
+.creativity .image-links:hover {
+    filter: invert(53%) sepia(96%) saturate(805%) hue-rotate(178deg) brightness(98%) contrast(96%);
+}
+
+.test-video .image-links:hover {
+    filter: invert(68%) sepia(68%) saturate(307%) hue-rotate(110deg) brightness(86%) contrast(90%);
+}
+
+.Taking-Road .image-links:hover {
+    filter: invert(63%) sepia(19%) saturate(462%) hue-rotate(301deg) brightness(103%) contrast(88%);
+}
+
+.creativity,
+.test-video,
+.Taking-Road {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 498px;
+}
+
+.creativity {
+    padding-left: 40px;
+}
+
+.Taking-Road {
+    padding-right: 40px;
+}
+
+.wistia-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* fin section wistia-links  */
+
+/* debut sub-footer  */
+
+.sub-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-footer p {
+    color: #363945;
+    font-size: 18px;
+    font-family: Walsheim;
+}
+
+.sub-footer a {
+    color: #5B6B7F;
+}
+
+/* fin sub-footer  */
+
+/* debut footer  */
+
+footer h5 {
+    margin-bottom: 0px;
+    color: white;
+    font-size: 18px;
+    font-family: Walsheim;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.footer-links a {
+    color: #B2B9C1;
+    font-size: 18px;
+    font-family: Walsheim;
+}
+
+.footer-title a {
+    color: #3EA9F5;
+    font-size: 18px;
+    font-family: Walsheim;
+    text-decoration: none;
+}
+
+.footer-title h4 {
+    font-size: 20px;
+    color: white;
+    font-family: Walsheim;
+}
+
+.footer-title p {
+    font-size: 16px;
+    color: white;
+    font-family: Walsheim;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 0px;
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #2A2D35;
+}
+
+.section-one {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex: 0.7;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+    width: 184px;
+}
+
+.section-two,
+.section-two a {
+    color: #B2B9C1;
+    text-align: center;
+    font-size: 18px;
+    font-family: Walsheim;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.line {
+    border: 0.2px solid white;
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.footer-links a:hover,
+.section-two a:hover {
+    text-decoration: underline;
+}
+
+.footer-title a:hover {
+    color: #0691F2;
+}
+
+/* fin footer  */
